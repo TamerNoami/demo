@@ -1,0 +1,5 @@
+com/so4it/domain/Account$Builder.class
+com/so4it/service/AccountService.class
+com/so4it/domain/Account.class
+com/so4it/dao/AccountDaoImpl.class
+com/so4it/dao/AccountDao.class
