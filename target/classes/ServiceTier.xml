@@ -4,12 +4,15 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="accountDao" class="com.so4it.dao.AccountDaoImpl"/>
+
 
     <bean id="accountService" class="com.so4it.service.AccountServiceImpl">
         <constructor-arg name="accountDao" ref="accountDao"/>
+        <constructor-arg name="accountProducer" ref="accountProducer"/>
     </bean>
 
-    <bean id="serviceFactory" class="com.so4it.service.ServiceFactoryImplOne"/>
+
+
+
 
 </beans>

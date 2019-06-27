@@ -15,8 +15,8 @@ public class AccountDaoImplTest {
     @Before
     public void testInit(){
        accountDao = new AccountDaoImpl();
-        Account account1 = new Account.Builder().withId(1L).withBalance(12000D).build();
-        Account account2 = new Account.Builder().withId(2L).withBalance(15000D).build();
+        Account account1 = Account.builder().withId(1L).withBalance(12000D).build();
+        Account account2 = Account.builder().withId(2L).withBalance(15000D).build();
 
         accountDao.create(account1);
         accountDao.create(account2);

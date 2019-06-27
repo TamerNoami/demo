@@ -12,7 +12,7 @@ import java.util.Optional;
 
 public class SpringMain {
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new GenericXmlApplicationContext("MySpringMain.xml");
+        ApplicationContext applicationContext = new GenericXmlApplicationContext("DaoTier.xml","FactoryTier.xml","ServiceTier.xml","Messaging.xml");
         AccountDao dao = (AccountDao) applicationContext.getBean(AccountDaoImpl.class);
 
         Optional<Account> account1 = dao.read(22L);

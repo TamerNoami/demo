@@ -35,9 +35,9 @@ public class Account {
                 '}';
     }
 
-    /*public static Builder builder(){
+    public static Builder builder(){
         return new Builder();
-    }*/
+    }
 
     public static class Builder{
 
