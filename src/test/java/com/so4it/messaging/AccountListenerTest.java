@@ -8,8 +8,6 @@ import java.util.List;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.LinkedBlockingDeque;
 
-import static org.junit.Assert.*;
-
 public class AccountListenerTest {
 
     @Test
@@ -17,6 +15,7 @@ public class AccountListenerTest {
         BlockingDeque<Account> accounts = new LinkedBlockingDeque<>();
 
         AccountProducer accountProducer = new AccountProducer(accounts);
+
         //Lambda expression
         AccountConsumer accountConsumer = new AccountConsumer(accounts,System.out::println);
 
